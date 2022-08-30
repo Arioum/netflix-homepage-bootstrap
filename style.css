@@ -86,12 +86,10 @@ body {
     text-decoration: none;
 }
 
-
 .hero-content {
     text-align: center;
     padding: 9em 0;
 }
-
 
 .get-started-field {
     display: flex;
@@ -193,7 +191,8 @@ body {
     position: relative;
 }
 
-.tv-frame {
+.tv-frame,
+.mac-frame {
     z-index: 1;
 }
 
@@ -201,6 +200,13 @@ body {
     position: absolute;
     top: 80px;
     left: 68px;
+    z-index: -1;
+}
+
+.mac-video {
+    position: absolute;
+    top: 23px;
+    left: 90px;
     z-index: -1;
 }
 
