@@ -1,5 +1,5 @@
 ## Netflix homepage made with bootstrap
 Created a static landing page of www.Netflix.com
-## Tech
 
+## Tech
 HTML, CSS, Bootstrap 5
