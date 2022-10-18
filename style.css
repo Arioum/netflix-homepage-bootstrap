@@ -144,12 +144,10 @@ body {
     margin: 2em 0;
 }
 
-
 .section--faq {
     display: block;
     margin: 4em;
 }
-
 
 .accordion {
     max-width: 800px;
@@ -253,8 +251,6 @@ body {
     text-decoration: underline;
 }
 
-
-
 @media (max-width: 1400px) {
     .header-textstyle-2 {
         font-size: 3.5rem;
@@ -296,9 +292,18 @@ body {
         width: 120px
     }
 
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .get-started-field {
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        gap: 2em
     }
 
     .get-started-field input[type="email"] {
@@ -320,7 +325,6 @@ body {
         max-width: 300px;
         display: flex;
         justify-content: center;
-
     }
 
     .get-started-button button {
@@ -346,12 +350,6 @@ body {
 
     .accordion-body {
         font-size: 1.4rem;
-    }
-
-    .get-started-field {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
 }
 
@@ -385,8 +383,23 @@ body {
         font-size: 1.2rem;
     }
 
-    .right-content img {
-        width: 400px;
+    .section--3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .right-content .mac-video {
+        width: 300px;
+    }
+
+    .brand-logo img {
+        width: 100px
+    }
+
+    .get-started-field input[type="email"] {
+        width: 350px;
     }
 }
 
@@ -398,8 +411,6 @@ body {
     .accordion-body {
         font-size: 1rem;
     }
-
-
 
     .get-started-field input[type="email"] {
         width: 500px;
