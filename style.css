@@ -87,6 +87,12 @@ body {
     text-decoration: none;
 }
 
+.btn-check:focus+.btn,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
 .hero-content {
     text-align: center;
     padding: 9em 0;
@@ -144,10 +150,12 @@ body {
     margin: 2em 0;
 }
 
+
 .section--faq {
     display: block;
     margin: 4em;
 }
+
 
 .accordion {
     max-width: 800px;
@@ -232,7 +240,6 @@ body {
     text-decoration: underline;
 }
 
-
 .footer-items-container {
     display: flex;
     flex-direction: column;
@@ -250,6 +257,12 @@ body {
 .footer-items-container a:hover {
     text-decoration: underline;
 }
+
+.copyright p {
+    margin-top: 1em;
+    color: #8f8f8f;
+}
+
 
 @media (max-width: 1400px) {
     .header-textstyle-2 {
@@ -292,22 +305,16 @@ body {
         width: 120px
     }
 
-    .hero-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .get-started-field {
+        margin-top: 1em;
         display: flex;
-        flex-direction: column;
+        gap: 2em;
         justify-content: center;
         align-items: center;
-        gap: 2em
     }
 
     .get-started-field input[type="email"] {
-        width: 500px;
+        max-width: 500px;
         padding: 1em 1em;
         font-size: 1em;
         font-weight: 600;
@@ -322,13 +329,14 @@ body {
 
     .get-started-button {
         background-color: #ff0011;
-        max-width: 300px;
+        max-width: 250px;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     .get-started-button button {
-        padding: 1em 1.5em;
+        padding: .8em;
     }
 
     .get-started-button a {
@@ -345,11 +353,17 @@ body {
     }
 
     .accordion-item button {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .accordion-body {
         font-size: 1.4rem;
+    }
+
+    .get-started-field {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -375,6 +389,24 @@ body {
         margin: 4em 0
     }
 
+    .navbar {
+        padding: 1.8em 2em;
+    }
+
+    .get-started-field input[type="email"] {
+        max-width: 420px;
+        padding: 1em 1em;
+    }
+
+    .get-started-button button {
+        display: flex;
+        align-items: center;
+    }
+
+    .get-started-button button img {
+        width: 15px;
+    }
+
     .accordion-item button {
         font-size: 1.2rem;
     }
@@ -383,42 +415,69 @@ body {
         font-size: 1.2rem;
     }
 
-    .section--3 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .right-content .mac-video {
-        width: 300px;
+    .right-content .tv-frame img {
+        width: 400px;
     }
 
-    .brand-logo img {
-        width: 100px
+    .right-content .tv-video img {
+        width: 285px;
+        position: relative;
+        top: -15px;
+        right: 12px;
     }
 
-    .get-started-field input[type="email"] {
-        width: 350px;
+    .right-content .mac-frame img {
+        width: 400px;
+    }
+
+    .right-content .mac-video img {
+        width: 250px;
+        position: relative;
+        top: -5px;
+        right: 12px;
+    }
+
+    .right-content img {
+        width: 400px
+    }
+
+    .footer-items-container {
+        height: 200px;
     }
 }
 
 @media (max-width: 420px) {
+    .header-textstyle-1 {
+        font-size: 2rem;
+    }
+
+    .header-textstyle-2 {
+        font-size: 2rem;
+    }
+
+    .body-textstyle-2 {
+        font-size: 1rem;
+    }
+
     .accordion-item button {
         font-size: 1rem;
+    }
+
+    .sign-in {
+        padding: .5em;
     }
 
     .accordion-body {
         font-size: 1rem;
     }
 
+    .navbar {
+        padding: 1.4em 1em;
+    }
+
     .get-started-field input[type="email"] {
-        width: 500px;
+        width: 300px;
         padding: 1em 1em;
-        font-size: 1em;
-        font-weight: 600;
-        border: none;
-        color: #000;
     }
 
     .get-started-field input:focus {
@@ -435,13 +494,16 @@ body {
     }
 
     .get-started-button button {
-        padding: 1em 1.5em;
+        display: flex;
+        align-items: center;
+    }
+
+    .get-started-button button img {
+        width: 10px;
     }
 
     .get-started-button a {
-        color: #fff;
-        font-size: 1.8rem;
-        text-decoration: none;
+        font-size: 1.4rem;
         line-height: 1;
         margin-right: .5em;
     }
@@ -451,11 +513,33 @@ body {
         flex-direction: column;
     }
 
-    .accordion-item button {
-        font-size: 1.4rem;
+    .right-content .tv-frame img {
+        width: 300px;
     }
 
-    .accordion-body {
-        font-size: 1.4rem;
+    .right-content .tv-video img {
+        width: 218px;
+        position: relative;
+        top: -32px;
+        right: 28px;
+    }
+
+    .right-content .mac-frame img {
+        width: 300px;
+    }
+
+    .right-content .mac-video img {
+        width: 185px;
+        position: relative;
+        top: -10px;
+        right: 35px;
+    }
+
+    .right-content img {
+        width: 300px
+    }
+
+    .footer-items-container {
+        height: 280px;
     }
 }
